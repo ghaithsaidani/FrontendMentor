@@ -1,0 +1,129 @@
+@use "colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text&display=swap');
+
+body {
+    background-color: colors.$LightGray;
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 0;
+    overflow-x: hidden;
+}
+
+main{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 320px;
+    
+    section{
+        padding:25px;
+        h1{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 14px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .section1{
+        background-color: white;
+        
+        h1{
+            color: colors.$Cyan;
+        }
+        h3{
+            color: colors.$BrightYellow;
+        }
+        p{
+            color: colors.$GrayishBlue;
+            line-height: 25px;
+        }
+    }
+    .section2{
+        padding: 25px;
+        background-color: colors.$Cyan;
+        color: white;
+    
+        h1{
+            margin: 0;
+            
+        }
+        .price{
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            span{
+                font-size: 16px;
+                font-weight: 100;
+                margin-left: 15px;
+                color: colors.$LightGrayBlue;
+            }
+        }
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        button{
+            width: 100%;
+            height: 45px;
+            margin-top: 20px;
+            color: white;
+            background-color: colors.$BrightYellow;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Karla', sans-serif;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+
+    .section3{
+        background-color: colors.$LightCyan;
+        color: white;
+        p{
+            width: 200px;
+            line-height: 20px;
+            color: colors.$LightGray;
+        }
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (min-width: 980px) {
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 635px;
+        
+    }
+    
+    .section1{
+        border-radius: 10px 10px 0 0;
+        grid-column: 1/ span 2;
+        p{
+            font-size: 16px;
+            width: 95%;
+            line-height: 5px;
+        }
+        
+    }
+    .section2{
+        border-bottom-left-radius: 10px;
+        
+    }
+    .section3{
+        border-bottom-right-radius: 10px;
+    }
+
+}

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+
+
+body{
+    height: 100%;
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+.cards{
+    width:340px;
+    
+}
+
+.card{
+    height: 200px;
+    width: 340px;
+    border-radius: 20px;
+    position: relative;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 30px;
+}
+.card-body{
+    border-radius: 20px;
+    background-color: hsl(246, 80%, 60%);
+    padding-block: 10%;
+    padding-inline: 10%;
+}
+
+.card-body>.row{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+/* .card-footer{
+    position: relative;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+    background-color: hsl(235, 46%, 20%);
+} */
+.card-image{
+    height: 65px;
+    border: 3px solid  white;
+    border-radius: 50%;
+}
+
+.card-text{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: hsl(236, 100%, 87%);
+}
+
+.card-text>.name{
+    font-size: 25px;
+    color: white;
+}
+
+.card-footer{
+    padding-inline: 15px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.card-footer>a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: hsl(235, 45%, 61%);
+    width: 100px;
+    font-weight: 600;
+    
+    cursor: context-menu;
+}
+
+.card-footer>a:hover{
+    opacity: 0.6;
+}
+
+#active{
+    color: white;
+}
+
+.other-cards>.card{
+    height: 175px;
+    position: relative;
+    background-position: top -11px right 16px;
+    background-repeat: no-repeat;
+}
+
+
+.card1{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url('images/icon-work.svg');
+    
+}
+
+.card2{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url('images/icon-play.svg');  
+}
+
+.card3{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url('images/icon-study.svg');  
+}
+
+.card4{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url('images/icon-exercise.svg');  
+}
+
+.card5{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url('images/icon-social.svg');  
+}
+
+.card6{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url('images/icon-self-care.svg');  
+}
+.other-cards>.card>.card-body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 272px;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%); 
+    
+} 
+.other-cards>.card>.card-body:hover{
+    background-color: hsl(236, 41%, 34%);  
+} 
+
+.other-cards>.card>.card-body>.row{
+    width: 272px; 
+     
+} 
+
+.other-cards>.card>.card-body>.row>.card-text{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.first-col{
+    line-height: 35px;
+}
+.title{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.hours{
+    font-size: 28px;
+    color: white;
+    display: flex;
+    
+    
+}
+
+.second-col{
+    direction: rtl;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    align-items: flex-start;
+}
+
+.second-col>.last-week{
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    direction: ltr;
+    
+}
+
+.last{
+    margin-left: 5px;
+}
+
+.attribution{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+@media screen and (min-width:1200px){
+    body{
+        display: flex;
+        height: 929px;
+        align-items: center;
+        
+    }
+    .container{
+        width: 72%;
+        height: 600px;
+    
+        
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .other-cards{
+        display: grid;
+    }
+
+    .profile-card>.card{
+        height: 100%;
+        width: 300px;
+        
+    }
+
+    .profile-card>.card>.card-body>.row{
+        height: 350px;
+        display: block;
+    }
+
+    .card-image{
+        margin-top: 5px;
+        height: 90px;
+        border: 3px solid  white;
+        border-radius: 50%;
+    }
+    
+    .card-text{
+        margin-left: 0;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .card-text>.name{
+        font-size: 40px;
+        line-height: 50px;
+        color: white;
+    }
+    
+    .card-footer{
+        padding-inline: 40px;
+        display: block;
+        margin-top: 0;
+        align-items: center;
+        height: 190px;
+        
+        margin-top: 40px;
+    }
+
+    .card-footer>a{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .other-cards>.card{
+        height: 285px;
+    }
+
+
+
+    .card1{
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 20px;
+    }
+    .card2{
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 20px;
+        
+        
+    }
+    .card3{
+        grid-column: 3;
+        grid-row: 1;
+        margin-left: 20px;
+    }
+    .card4{
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 20px;
+    }
+    .card5{
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 20px;
+    }
+    .card6{
+        grid-column: 3;
+        grid-row: 2;
+        margin-left: 20px;
+    }
+
+
+    .other-cards>.card>.card-body{
+        height: 175px;
+    }  
+    
+    
+    .other-cards>.card>.card-body>.row>.card-text{
+        
+        display: block;
+    }
+    
+    .title{
+        font-size: 25px;
+        color: white;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    
+    .hours{
+        font-size: 50px;
+        color: white;
+        display: flex;
+        margin-top: 30px;
+        
+        
+    }
+    
+    .second-col{
+        direction: rtl;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35px;
+        align-items: flex-start;
+    }
+    
+    .second-col>.last-week{
+        position: absolute;
+        margin-top: 20px;
+        left: 35px;
+        
+    }
+
+    .settings{
+        position: absolute;
+        top: 35px;
+    }
+    
+    .last{
+        margin-left: 5px;
+    }
+}

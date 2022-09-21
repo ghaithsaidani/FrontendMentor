@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="cards">
+      <div class="profile-card">
+        <div class="card ">
+          <div class="card-body">
+            <div class="row">
+              <img src="images/image-jeremy.png" alt="" class="card-image">
+              <div class="card-text">
+                Report for
+                <div class="name">Jeremy Robson</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a class="daily"  onclick="activateDaily(event)">
+              Daily
+            </a><br>
+            <a class="weekly" id="active" onclick="activateDaily(event)">
+              Weekly
+            </a><br>
+            <a class="monthly" onclick="activateDaily(event)">
+              Monthly
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="other-cards">
+        <div class="card card1">
+          <div class="card-body">
+            <div class="row">
+              <div class="card-text">
+                <div class="first-col">
+                  <div class="title">Work</div>
+                  <div class="hours"><div class="hours-number">32</div>hrs</div>
+                </div>
+                <div class="second-col">
+                  <div class="settings">...</div>
+                  <div class="last-week"><div class="last-text">Last Week -</div><div class="last">36</div>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="card-body">
+            <div class="row">
+              <div class="card-text">
+                <div class="first-col">
+                  <div class="title">Play</div>
+                  <div class="hours"><div class="hours-number">10</div>hrs</div>
+                </div>
+                <div class="second-col">
+                  <div class="settings">...</div>
+                  <div class="last-week"><div class="last-text">Last Week -</div><div class="last">8</div>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="card-body">
+            <div class="row">
+              <div class="card-text">
+                <div class="first-col">
+                  <div class="title">Study</div>
+                  <div class="hours"><div class="hours-number">4</div>hrs</div>
+                </div>
+                <div class="second-col">
+                  <div class="settings">...</div>
+                  <div class="last-week"><div class="last-text">Last Week -</div><div class="last">7</div>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card4">
+          <div class="card-body">
+            <div class="row">
+              <div class="card-text">
+                <div class="first-col">
+                  <div class="title">Exercise</div>
+                  <div class="hours"><div class="hours-number">4</div>hrs</div>
+                </div>
+                <div class="second-col">
+                  <div class="settings">...</div>
+                  <div class="last-week"><div class="last-text">Last Week -</div><div class="last">5</div>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card5">
+          <div class="card-body">
+            <div class="row">
+              <div class="card-text">
+                <div class="first-col">
+                  <div class="title">Social</div>
+                  <div class="hours"><div class="hours-number">5</div>hrs</div>
+                </div>
+                <div class="second-col">
+                  <div class="settings">...</div>
+                  <div class="last-week"><div class="last-text">Last Week -</div><div class="last">10</div>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card6">
+          <div class="card-body">
+            <div class="row">
+              <div class="card-text">
+                <div class="first-col">
+                  <div class="title">Self Care</div>
+                  <div class="hours"><div class="hours-number">2</div>hrs</div>
+                </div>
+                <div class="second-col">
+                  <div class="settings">...</div>
+                  <div class="last-week"><div class="last-text">Last Week -</div><div class="last">2</div>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/alaa1945">Ghaith</a>.
+    </div> -->
+  </div>
+  
+
+
+  
+</body>
+
+</html>

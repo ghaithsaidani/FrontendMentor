@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+.container{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+}
+
+.title{
+
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 60px;
+    color: hsl(234, 12%, 34%);
+}
+
+.big-title{
+    font-weight: bold;
+}
+
+.intro{
+    margin-top: 15px;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text{
+    width: 450px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top:50px;
+}
+.card{
+    margin-top: 25px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-inline: 30px;
+    padding-block: 50px;
+    height: 160px;
+    width: 300px;
+    border-radius: 5px;
+    transition:transform .5s;
+
+}
+
+.card1{
+    border-top:4px solid hsl(180, 62%, 55%);
+}
+
+.card2{
+    border-top:4px solid hsl(0, 78%, 62%);
+}
+
+.card3{
+    border-top:4px solid  hsl(34, 97%, 64%);
+}
+
+.card4{
+    border-top:4px solid hsl(212, 86%, 64%);
+}
+
+.card-body{
+    /* padding-inline: 30px;
+    padding-block: 35px; */
+    height: 100%;
+    position: relative;
+    
+}
+
+.card-title{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.card-text{
+    margin-top: 15px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+
+.card-image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    
+}
+
+footer{
+
+    font-size: 12px;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    
+    
+}
+
+.card1:hover{
+    background-color: hsl(180, 62%, 55%,0.4) ;
+}
+
+.card2:hover{
+    background-color:hsl(0, 78%, 62%,0.4);
+}
+
+.card3:hover{
+    background-color:hsl(34, 97%, 64%,0.4);
+}
+
+.card4:hover{
+    background-color:hsl(212, 86%, 64%,0.4);
+}
+
+@media screen and (min-width:1110px){
+    .cards-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        width: 1100px;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        align-items: center;
+        
+    }
+
+    .second-cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
