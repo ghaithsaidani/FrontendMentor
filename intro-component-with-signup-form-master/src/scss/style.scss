@@ -1,0 +1,143 @@
+@use 'colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    background-image: url('../assets/bg-intro-mobile.png');
+    background-color: colors.$Red;
+    padding-block: 50px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+        margin: 0;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: white;
+        h1{
+            width: 50%;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+    }
+    main{
+        margin-top: 50px;
+        width: 550px;
+        section{
+            .offer{
+                background-color: colors.$Blue;
+                border-radius: 10px;
+                box-shadow: 0px 8px 0px rgb(0 0 0 / 15%);
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: white;
+                    font-weight: 600;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    span{
+                        font-weight: 200;
+                        font-size: 13px;
+                    }
+                }
+            }
+            form{
+                margin-top: 30px;
+                border-radius: 10px;
+                padding: 25px;
+                background-color: white;
+                box-shadow: 0px 8px 0px rgb(0 0 0 / 15%);
+                display: grid;
+                gap: 15px;
+                input{
+                    height: 60px;
+                    border-radius: 5px;
+                    border: 1px solid colors.$LightGray;
+                    padding-left: 20px;
+                }
+                input::placeholder{
+                    text-transform: capitalize;
+                    color: colors.$DarkGray;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                }
+                button{
+                    height: 50px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: colors.$Green;
+                    box-shadow: 0px 7px 0px colors.$DarkGreen;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+                button:hover{
+                    transform: translateY(-5px);
+                    transition: all .5s;
+                    opacity: 0.8;
+                }
+                .terms-services{
+                    font-size: 12px;
+                    margin-top: 5px;
+                    text-align: center;
+                    color: colors.$GrayishBlue;
+                    a{
+                        color: colors.$Red;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        opacity: 0.8;
+                    }
+                }
+            }
+            
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 5px;
+        color: white;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    body{
+        background-image: url('../assets/bg-intro-desktop.png');
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        header{
+            width: 600px;
+            text-align: start;
+            align-items: flex-start;
+            
+            h1{
+                font-size: 40px;
+                width: 80%;
+            }
+        }
+        main{
+            width: 700px;
+            
+            section{
+                form{
+                    
+                    gap: 25px;
+                }
+            }
+        }
+    }
+}
